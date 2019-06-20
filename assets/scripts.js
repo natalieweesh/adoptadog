@@ -78,9 +78,17 @@ function load() {
     ]
   };
   data.dogs.map((dog, i) => {
+    // create thumbnail image
     let dogBlock = document.createElement("div");
+    let img = `url(.${dog.image})`;
     dogBlock.className = "dog";
-    dogBlock.style.backgroundImage = `url(.${dog.image})`;
+    dogBlock.style.backgroundImage = img;
+    // open modal with dog image
+    dogBlock.onclick = () => {
+      let modal = document.getElementById("modal");
+      modal.className = "visible";
+      modal.style.backgroundImage = img;
+    };
     document.getElementById("gallery").append(dogBlock);
   });
 }

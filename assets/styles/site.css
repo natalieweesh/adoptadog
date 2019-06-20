@@ -2,6 +2,7 @@
 :root {
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-serif: Georgia, serif;
+  --color: #000;
   --color-secondary: #333;
   --color-link: #635ac7;
 
@@ -37,4 +38,38 @@ a {
   color: var(--color);
   font-family: var(--font-serif);
   text-align: center;
+}
+
+#gallery {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dog {
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.5s ease;
+}
+
+.dog:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.dog img {
+  width: 100%;
+  height: auto;
 }

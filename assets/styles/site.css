@@ -1,6 +1,6 @@
 /* Globals */
 :root {
-  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Mali", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-serif: Georgia, serif;
   --color: #000;
   --color-secondary: #333;
@@ -50,6 +50,7 @@ a {
   color: var(--color);
   font-family: var(--font-serif);
   text-align: center;
+  font-size: 0.6rem;
 }
 
 #gallery {
@@ -133,6 +134,6 @@ a {
   text-transform: uppercase;
   color: slategray;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0 3rem;
   animation: blinking 1s infinite;
 }

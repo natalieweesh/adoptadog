@@ -11,6 +11,18 @@
   line-height: 1.5;
 }
 
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -48,6 +60,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .modal-open {
@@ -113,4 +126,13 @@ a {
 
 .close-modal:hover {
   cursor: pointer;
+}
+
+#loading {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: slategray;
+  text-align: center;
+  padding: 1rem 0;
+  animation: blinking 1s infinite;
 }
